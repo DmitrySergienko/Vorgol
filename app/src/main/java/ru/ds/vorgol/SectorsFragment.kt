@@ -5,12 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ru.ds.vorgol.databinding.MainFragmentBinding
+import ru.ds.vorgol.databinding.SectorsFragmentBinding
 
-class MainFragment : Fragment() {
+class SectorsFragment : Fragment() {
 
-    private var _binding: MainFragmentBinding? = null
-    private val binding: MainFragmentBinding
+    private var _binding: SectorsFragmentBinding? = null
+    private val binding: SectorsFragmentBinding
         get() = _binding!!
 
 
@@ -19,9 +19,11 @@ class MainFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = MainFragmentBinding.inflate(inflater, container, false)
+        _binding = SectorsFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
@@ -29,6 +31,6 @@ class MainFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = MainFragment()
+        fun newInstance() = SectorsFragment()
     }
 }

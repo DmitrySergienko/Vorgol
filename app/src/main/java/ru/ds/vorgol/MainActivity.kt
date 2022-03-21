@@ -1,8 +1,7 @@
 package ru.ds.vorgol
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import ru.ds.vorgol.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,16 +10,35 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-             setContentView(binding.root)
-        openFragment(MainFragment.newInstance(),R.id.container)
+        setContentView(binding.root)
+
+        initBottomNavigation()
     }
 
-    private fun openFragment(f: Fragment, idHolder: Int) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(idHolder, f)
-            .commit()
 
+    private fun initBottomNavigation() {
+        binding.bottomNavigationView.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.bottom_sector -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, SectorsFragment()).commit()
+                    true
+                }
+                R.id.bottom_settings -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, SettingsFragment()).commit()
+                    true
+                }
+                R.id.bottom_about -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.container, AboutFragment()).commit()
+                    true
+                }
+                else -> true
+            }
+        }
+        //default view
+        binding.bottomNavigationView.selectedItemId = R.id.bottom_sector
     }
 
 }
