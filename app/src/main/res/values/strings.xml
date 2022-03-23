@@ -7,4 +7,8 @@
     <string name="sector">Sector</string>
     <string name="settings">Settings</string>
     <string name="about">About</string>
+    <string name="SectorA">Sector A</string>
+    <string name="SectorB">Sector B</string>
+    <string name="SectorC">Sector C</string>
+    <string name="SectorD">Sector D</string>
 </resources>
