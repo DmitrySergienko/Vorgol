@@ -24,6 +24,8 @@ class SectorsAdapter: RecyclerView.Adapter<SectorsAdapter.SectorsHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SectorsHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.sector_item,parent,false) //get layoutInflater
         return SectorsHolder(view)
+
+
     }
 
     override fun onBindViewHolder(holder: SectorsHolder, position: Int) {

@@ -11,4 +11,6 @@
     <string name="SectorB">Sector B</string>
     <string name="SectorC">Sector C</string>
     <string name="SectorD">Sector D</string>
+    <string name="title">Title</string>
+    <string name="contex">Contex</string>
 </resources>
