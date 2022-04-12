@@ -1,5 +1,7 @@
 package ru.ds.vorgol
 
-data class Sectors(
-    val imageId: Int,
-    val title: String)
+data class Sectors (
+    var title_text:String,
+    var contentText:String,
+    var image_id:Int
+)

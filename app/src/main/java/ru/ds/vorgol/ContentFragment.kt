@@ -39,6 +39,6 @@ class ContentFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = SectorsFragment()
+        fun newInstance() = MainFragment()
     }
 }

@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.bottom_sector -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.container, SectorsFragment()).commit()
+                        .replace(R.id.container, MainFragment()).commit()
                     true
                 }
                 R.id.bottom_settings -> {
