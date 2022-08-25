@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/Sector_A"
+    android:icon="@drawable/ic_baseline_arrow_drop_up_24"
+    app:tooltipText = "Description"
+    android:title="@string/sector"
+    android:tooltipText="@string/SectorA"/>
+    <item
+        android:id="@+id/Sector_B"
+        android:icon="@drawable/ic_baseline_arrow_drop_up_24"
+        app:tooltipText = "Description"
+        android:title="@string/sector"
+        android:tooltipText="@string/SectorB"/>
+    <item
+        android:id="@+id/Sector_C"
+        android:icon="@drawable/ic_baseline_arrow_drop_up_24"
+        app:tooltipText = "Description"
+        android:title="@string/sector"
+        android:tooltipText="@string/SectorC"/>
+    <item
+        android:id="@+id/Sector_D"
+        android:icon="@drawable/ic_baseline_arrow_drop_up_24"
+        app:tooltipText = "Description"
+        android:title="@string/sector"
+        android:tooltipText="@string/SectorD"/>
+
+
+</menu>
