@@ -14,8 +14,8 @@ class ContentActivity : AppCompatActivity() {
         binding = SectorItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //zoom PhotoView
-        val photoView = binding.imageView as PhotoView
-        photoView.setImageResource(intent.getIntExtra("image",R.drawable.ic_place_wiki))
+             val photoView = binding.imageView as PhotoView
+       photoView.setImageResource(intent.getIntExtra("image",R.drawable.ic_place_wiki))
 
        with(binding){
            textViewTitle.text = intent.getStringExtra("Title")

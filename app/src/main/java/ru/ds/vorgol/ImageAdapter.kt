@@ -5,9 +5,6 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import ru.ds.vorgol.databinding.SectorItemBinding
 
@@ -31,7 +28,7 @@ class ImageAdapter(listArray: ArrayList<Sectors>, context: Context): RecyclerVie
         imageView.setOnClickListener {
             val i = Intent(context, ContentActivity::class.java).apply {
                 putExtra("title", textViewTitle.text.toString())
-                putExtra("context", sectors.toString())
+                putExtra("context", textViewContent.text.toString())
                 putExtra("image", sectors.image_id)
             }
             context.startActivity(i)
